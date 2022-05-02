@@ -6,7 +6,7 @@ declare module 'express-serve-static-core' {
         user?: UserTokenPayload
     }
 
-    export interface Response extends http.IncomingMessage, Express.Response {
+    export interface Response extends http.ServerResponse, Express.Response {
         user?: UserTokenPayload
     }
 }
